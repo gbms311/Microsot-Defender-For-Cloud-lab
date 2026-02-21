@@ -74,11 +74,11 @@ Continue with the exercise below until the deployment has completed.
 
 1. (Option 1) Prepare your lab environment by clicking on the blue **Deploy to Azure** button below:
 
-<a href="https://raw.githubusercontent.com/gbms311/Microsot-Defender-For-Cloud-lab/main/Files/labdeploy.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgbms311%2FMicrosot-Defender-For-Cloud-lab%2Fmain%2FFiles%2Flabdeploy.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
 
 1. (Option 2) Prepare your exiting mcaps tenant with the lab environment by clicking on the blue **Deploy to Azure** button below:
 
-<a href="https://raw.githubusercontent.com/gbms311/Microsot-Defender-For-Cloud-lab/main/Files/mcaps-labdeploy.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgbms311%2FMicrosot-Defender-For-Cloud-lab%2Fmain%2FFiles%2Fmcaps-labdeploy.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
 
 
 
