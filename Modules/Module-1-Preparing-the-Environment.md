@@ -5,6 +5,8 @@
 #### 🎓 Level: 100 (Beginner)
 #### ⌛ Estimated time to complete this lab: 30 minutes
 
+**Skip to provisioning resources you already have an Azure Subscription <br>
+
 ## Objectives
 Create a new Microsoft Account enable with Azure Trial Subscription 
 This section is intended to deploy Azure resources in an automated way to get you started quickly or in case you need to re-provision your environment.
@@ -69,9 +71,15 @@ Continue with the exercise below until the deployment has completed.
 <img src="../Images/asc-lab-architecture.svg?raw=true">
 <br>
 
-1. Prepare your lab environment by clicking on the blue **Deploy to Azure** button below:
+1. (Option 1) Prepare your lab environment by clicking on the blue **Deploy to Azure** button below:
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Security-Center%2Fmaster%2FLabs%2FFiles%2Flabdeploy.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+<a href="https%3A%2F%2Fgithub.com%2Fgbms311%2FMicrosot-Defender-For-Cloud-lab%2Fraw%2Frefs%2Fheads%2Fmain%2FFiles%2Flabdeploy.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+
+1. (Option 2) Prepare your exiting mcaps tenant with the lab environment by clicking on the blue **Deploy to Azure** button below:
+
+<a href="https%3A%2F%2Fgithub.com%2Fgbms311%2FMicrosot-Defender-For-Cloud-lab%2Fraw%2Frefs%2Fheads%2Fmain%2FFiles%2Fmcaps-labdeploy.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+
+
 
 2.	You will be redirected to Azure Portal > custom deployment page where you should specify mandatory fields for deployment.
 3.	On the subscription field, select **Azure subscription 1**.
