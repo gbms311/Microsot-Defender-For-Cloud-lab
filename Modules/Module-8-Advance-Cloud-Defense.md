@@ -83,7 +83,7 @@ File integrity monitoring (FIM) scans and analyzes operating system files, Windo
 
 
 
-####Login to the Windows Server 
+#### Login to the Windows Server 
 
 From powershell ,  test the 'Run' registry entry
 ```
@@ -94,7 +94,7 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Na
 
 
 
-####Linux Test
+#### Linux Test
 
 From a terminal, test onethe default rules /etc/*.conf
 ```
