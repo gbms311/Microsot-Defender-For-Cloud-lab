@@ -6,8 +6,9 @@
         // parmaters for Windows Server Name
         "winServerName": {
             "type": "string",
+            "defaultValue": "cspmlab-winsrv",
             "metadata": {
-                "description": "Name for the Windows Server Virtual Machine."
+                "description": "Name for the Windows Server Virtual Machine. Keep below 15 characers to avoid deployment failure."
             }
         },  
         // parmaters for Windows Server Azure Image Version
@@ -31,10 +32,12 @@
         // parmaters for Linux Server Name
         "linuxServerName": {
             "type": "string",
+            "defaultValue": "cspmlab-nix",
             "metadata": {
                 "description": "Name for the Linux Server Virtual Machine."
             }
         },
+
         //parmeters for user name
         "adminUsername": {
             "type": "string",

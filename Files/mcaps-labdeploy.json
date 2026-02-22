@@ -12,19 +12,19 @@
         "tenantId": {
             "type": "String",
             "metadata": {
-                "description": "The Azure AD Tenant ID"
+                "description": "The Entra Tenant ID"
             }
         },
         "adminLoginName": {
             "type": "String",
             "metadata": {
-                "description": "The login name of the AD administrator (e.g., user@contoso.com)"
+                "description": "The login name of the Entra ID administrator (e.g., user@contoso.com)"
             }
         },
         "adminObjectId": {
             "type": "String",
             "metadata": {
-                "description": "The Object ID (SID) of the Azure AD administrator user, group, or application"
+                "description": "The Object ID (SID) of the Entra ID administrator user, group, or application"
             }
         },
         "password": {
