@@ -80,14 +80,18 @@ File integrity monitoring (FIM) scans and analyzes operating system files, Windo
 10. Select **Continue**.
 
 ### Exercise 3b: Test File Integrity Monitoring
+
 ####Login to the Windows Server 
+
 From powershell ,  test the 'Run' registry entry
 ```
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v2.exe"
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v3.exe"
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v4.exe"
 ```
+
 ####Linux Test
+
 From a terminal, test onethe default rules /etc/*.conf
 ```
 sudo touch /etc/fim_test_create1.conf
