@@ -50,12 +50,12 @@ Now all your existing and upcoming Azure VMs and Azure Arc-enabled servers are p
 13.	Now you should get the prompt for the local admin credentials. **Type your username and password** and click **OK**.
 14.	You **are now connected to asclab-win** server. Close the remote control session/log off.
 
-### Exercise 3: File Integrity Monitoring
+### Exercise 3: Enable File Integrity Monitoring
 
 File integrity monitoring (FIM) scans and analyzes operating system files, Windows registries, application software, Linux system files for changes that might indicate an attack. To enable FIM, follow the instructions below:
 
 1.	From Microsoft Defender for Cloud menu, select **Environment Settings**.
-2.	Select the relevant subscription.
+2.	Select the relevant **subscription**.
 3.	Locate the Defender for Servers plan and select **Settings**.
 4.  In the **File Integrity Monitoring** section, switch the toggle to **On**. Then select **Edit configuration**. 
 ![](../Images/mdfc-fim.png?raw=true)
@@ -77,10 +77,30 @@ File integrity monitoring (FIM) scans and analyzes operating system files, Windo
     - (Optional) Select Delete rule to delete a rule configuration.
 
 9. Select **Apply** to save your changes.
-10. Select **Apply**.
-11. Select **Continue**.
+10. Select **Continue**.
+
+### Exercise 3b: Test File Integrity Monitoring
+####Login to the Windows Server 
+From powershell ,  test the 'Run' registry entry
+```
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v2.exe"
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v3.exe"
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v4.exe"
+```
+####Linux Test
+From a terminal, test onethe default rules /etc/*.conf
+```
+sudo touch /etc/fim_test_create1.conf
+sudo touch /etc/fim_test_create2.conf
+sudo touch /etc/fim_test_create3.conf
+sudo touch /etc/fim_test_create4.conf
+sudo touch /etc/fim_test_create5.conf
+```
+
+
 
 #### Review FIM findings
+This can take 1-5 minutes to come through <br>
 1.  In the Defender for Cloud navigation menu, go to **Workload protection** > **File integrity monitoring**.
 ![](../Images/lab8-reviewfim1.png?raw=true)
 2.  Review the total amount of **Changes** in your environment and the amount of **Total changes** per machine.
