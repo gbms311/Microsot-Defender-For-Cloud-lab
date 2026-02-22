@@ -110,11 +110,15 @@ sudo touch /etc/fim_test_create5.conf
 #### Review FIM findings
 This can take 1-5 minutes to come through <br>
 1.  In the Defender for Cloud navigation menu, go to **Workload protection** > **File integrity monitoring**.
-![](../Images/lab8-reviewfim1.png?raw=true) <br>
+![](../Images/lab8-reviewfim1.png?raw=true) 
+
+
 2.  Review the total amount of **Changes** in your environment and the amount of **Total changes** per machine.
-![](../Images/lab8-reviewfimresults.png?raw=true) <br>
-3.  FIM results are exported to the Log Analytics workspace you selected at the beginning of this exercise. 
-You can run the followng KQL command
+![](../Images/lab8-reviewfimresults.png?raw=true) 
+
+
+3.  FIM results are exported to the **Log Analytics workspace** you selected at the beginning of this exercise. 
+You can run the followng KQL command to query the logs
 ```
 MDCFileIntegrityMonitoringEvents
 | where MonitoredEntityType in("File", "Registry")
