@@ -77,9 +77,11 @@ File integrity monitoring (FIM) scans and analyzes operating system files, Windo
     - (Optional) Select Delete rule to delete a rule configuration.
 
 9. Select **Apply** to save your changes.
-10. Select **Continue**.
+10. Select **Continue**. <br>
 
 ### Exercise 3b: Test File Integrity Monitoring
+
+
 
 ####Login to the Windows Server 
 
@@ -89,6 +91,8 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Na
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v3.exe"
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" -Name "FIM_Test_Run" -Value "C:\Temp\fim-test-v4.exe"
 ```
+
+
 
 ####Linux Test
 
